@@ -5,11 +5,14 @@
 
   <head>
     <!-- Title header, rest/style, bootstrap Lux theme -->
+    <!-- Post edit. Needed scipt for jquery and bootstrap.Java -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title> Lattitude - Home</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
   </head>
 
@@ -20,7 +23,13 @@
     </div>
     <!-- Options: bg-primary, bg-succes, bg-warning, bg-info, bg-danger, bg-dark -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      
+
+      <!-- Adding Button -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapse_target">
       <span class ="navbar-text"> Latitude </span>
       
       <ul class = "navbar-nav">
@@ -41,6 +50,7 @@
       
     
       </ul>
+      </div>
     </nav>
     <!-- Creating class containers for png files -->
     <div class='container'>
