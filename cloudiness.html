@@ -1,0 +1,116 @@
+<!-- Creating doc type and lang -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <!-- Title header, rest/style, bootstrap Lux theme -->
+    <!-- Post edit. Needed scipt for jquery and bootstrap.Java -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> Lattitude - Home</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class ="jumbotron" stlye="margin-bottom:0px;">
+      <h1> Weather Project</h1>
+      <p> Analysis of weather metrics</p>
+    </div>
+    <!-- Options: bg-primary, bg-succes, bg-warning, bg-info, bg-danger, bg-dark -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+      <!-- Adding Button -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapse_target">
+      <span class ="navbar-text"> Latitude </span>
+      
+      <ul class = "navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#"> 
+            Plots 
+            <span class="caret"></span>
+          </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+          <a class ="dropdown-item"> Max Temperature</a>
+          <div class="dropdown-divider"></div>
+          <a class ="dropdown-item"> Cloudiness</a>
+          <div class="dropdown-divider"></div>
+          <a class ="dropdown-item"> Humidity</a>
+          <div class="dropdown-divider"></div>
+          <a class ="dropdown-item"> Wind Speed</a>
+
+
+        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Data </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Comparisons </a>
+        </li>
+        
+
+
+      
+    
+      </ul>
+      </div>
+    </nav>
+    <!-- Creating class containers for png files -->
+    <div class='container'>
+      <div class="row">
+          <div class="col-lg-8">
+              <div class="page-text">
+                  <h1>Summary: Lattitude vs. Max Temperature</h1>
+                  <hr>
+                  <img src="Resources/Assets/Weather_Plot_Images/latitude_cloudiness.png" 
+                      alt="Lattitude vs. Longitude" 
+                      class="main-img">
+                  <p>The purpose of this project was to analyze how weather changes as you get close to the equator. To accomplish this analysis, I pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                  <p>After assembling the dataset, I used Matplotlib to plot various temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations that were witnessed.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 page-visuals">
+                <div class="page-text">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div class="visual-container">
+                        <div class="image">
+                            <a href="max-temperature.html">
+                                <img src= "Resources/Assets/Weather_Plot_Images/latitude_vs_max_temp.png" 
+                                alt="vs. Max Temperature"/>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <a href="humidity.html">
+                                <img src= "Resources/Assets/Weather_Plot_Images/latitude_humidity.png"
+                                    alt="vs. Humididty"/>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <a href="cloudiness.html">
+                                <img src= "Resources/Assets/Weather_Plot_Images/latitude_cloudiness.png"
+                                alt="vs. Cloudiness"/>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <a href="wind-speed.html">
+                                <img src= "Resources/Assets/Weather_Plot_Images/latitude_windspeed.png"
+                                alt="vs. Wind Speed"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </body>
+
+
+</html>
